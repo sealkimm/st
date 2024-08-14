@@ -1,0 +1,17 @@
+.box-wrap {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  border: 1px solid blue;
+  .box {
+    width: 200px;
+    height: 250px;
+    &:nth-child(1) {
+      background-color: orange;
+    }
+    &:nth-child(2) {
+      background-color: lightgreen;
+
+    }
+  }
+}

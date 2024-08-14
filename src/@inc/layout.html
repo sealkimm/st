@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+		<!-- font -->
+
+		<!-- plugin -->
+
+		{% if pageInfo.title -%}
+		<title>{{pageInfo.title}} | title</title>
+		<meta property="og:title" content="" />
+		<meta property="og:url" content="" />
+		{% else -%}
+		<title>title</title>
+		{% endif %}
+	</head>
+	<body>
+		<div class="wrapper">
+			<!-- header -->
+			{% include 'header.html' %}
+			<!--// header -->
+
+			<!-- content -->
+			{% block content %}{% endblock %}
+			<!-- //content -->
+
+			<!-- floatingBtn -->
+			{% include 'floatingBtn.html' %}
+			<!-- //floatingBtn -->
+
+			<!-- footer -->
+			{% include 'footer.html' %}
+			<!-- //footer -->
+		</div>
+	</body>
+</html>
